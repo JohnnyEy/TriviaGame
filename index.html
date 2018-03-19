@@ -1,14 +1,119 @@
-<!DOCTYPE! html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <title>Trivia Game!</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
 </head>
+<header>
+    <h1>Colorado Trivia!</h1>
+    <h4>How much do you know about Colorado?</h4>
+</header>
+<br>
+
 <body>
-    
+    <div id="container">
+        <div id=start>
+            <button id="play">Play!!</button>
+        </div>
+        <br>
+        <div id=timer>You have
+            <span id="countdown">15</span> seconds!!</div>
+        <br>
+        <div id="quiz">
+            <div id="question">
+                <form>
+                    <label>
+                        <bold>What is Colorado's state bird?</bold>
+                    </label>
+                    <br>
+                    <input type="radio" id="radio" name="answer1" value="LarkBunting"> Lark Bunting
+                    <br>
+                    <input type="radio" id="radio" name="answer1" value="Cardinal"> Cardinal
+                    <br>
+                    <input type="radio" id="radio" name="answer1" value="BaldEagle"> Bald Eagle
+                    <br>
+                    <input type="radio" id="radio" name="answer1" value="Hummingbird"> Hummingbird
+                    <br>
+                    <br>
+                    <label>What is Colorado's first professional sports team?</label>
+                    <br>
+                    <input type="radio" id="radio" name="answer2" value="Avalanche"> Avalanche
+                    <br>
+                    <input type="radio" id="radio" name="answer2" value="Rockies"> Rockies
+                    <br>
+                    <input type="radio" id="radio" name="answer2" value="Broncos"> Broncos
+                    <br>
+                    <input type="radio" id="radio" name="answer2" value="Nuggets"> Nuggets
+                    <br>
+                    <br>
+                    <label>How many counties does Colorado have?</label>
+                    <br>
+                    <input type="radio" id="radio" name="answer3" value="33"> 33
+                    <br>
+                    <input type="radio" id="radio" name="answer3" value="64"> 64
+                    <br>
+                    <input type="radio" id="radio" name="answer3" value="12"> 12
+                    <br>
+                    <input type="radio" id="radio" name="answer3" value="40"> 40
+                    <br>
+                    <br>
+                    <label>Colorado became the first state to legalize which of the following?</label>
+                    <br>
+                    <input type="radio" id="radio" name="answer4" value="beer"> Beer
+                    <br>
+                    <input type="radio" id="radio" name="answer4" value="Marijuana"> Marijuana
+                    <br>
+                    <input type="radio" id="radio" name="answer4" value="aspirin"> Aspirin
+                    <br>
+                    <input type="radio" id="radio" name="answer4" value="whiskey"> Whiskey
+                    <br>
+                    <br>
+                    <label>How many states border Colorado?</label>
+                    <br>
+                    <input type="radio" id="radio" name="answer5" value="3"> 3
+                    <br>
+                    <input type="radio" id="radio" name="answer5" value="8"> 8
+                    <br>
+                    <input type="radio" id="radio" name="answer5" value="7"> 7
+                    <br>
+                    <input type="radio" id="radio" name="answer5" value="5"> 5
+                    <br>
+                    <br>
+                    <label>What is Colorado's hightest mountain?</label>
+                    <br>
+                    <input type="radio" id="radio" name="answer6" value="mountEvans"> Mount Evans
+                    <br>
+                    <input type="radio" id="radio" name="answer6" value="longsPeak"> Longs Peak
+                    <br>
+                    <input type="radio" id="radio" name="answer6" value="pikesPeak"> Pikes Peak
+                    <br>
+                    <input type="radio" id="radio" name="answer6" value="MountElbert"> Mount Elbert
+                    <br>
+                </form>
+                <br>
+            </div>
+            <button id="done">Done?</button>
+        </div>
+        <div id=results>
+            <h1>RESULTS</h1>
+            <p>Correct:
+                <span id=correct>0</span>
+            </p>
+            <p>Incorrect:
+                <span id=incorrect>0</span>
+            </p>
+            <p>Missed:
+                <span id=blank>0</span>
+            </p>
+            <button id="restart">Try Again?!</button>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
